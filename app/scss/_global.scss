@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before,  *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page-section {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrapper {
+        min-height: 100vh;
+        padding: 115px 0 50px;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.title {
+    @include sf;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 53px;
+    margin-bottom: 55px;
+    padding: 85px 0 0 0;
+}
+
+.title-mini {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.scroll__btn {
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    img {
+        height: 10px;
+        transition: .3s;
+    }
+    img:hover {
+        transform: scale(1.5);
+    }
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    outline: transparent;
+    img {
+        margin: 0 auto;
+        transition: .3s;
+    }
+}
